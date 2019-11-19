@@ -6,7 +6,7 @@ import Textarea from 'react-textarea-autosize'
 const OneTextArea = ({ className }) => {
   return (
     <>
-      <Textarea minRows={10} className={className} />
+      <Textarea minRows={12} className={className} />
     </>
   )
 }
@@ -21,7 +21,7 @@ const OneTextAreaStyled = styled(OneTextArea)`
   //   min-height: 300px;
   text-align: right;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 16px;
 `
 
 OneTextArea.propTypes = {
