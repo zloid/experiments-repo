@@ -18,8 +18,7 @@ const OneTextAreaStyled = styled(OneTextArea)`
   top: 0;
   //    textarea
   border-radius: 5px;
-  //   min-height: 300px;
-  text-align: right;
+  text-align: left;
   overflow: hidden;
   font-size: 16px;
 `
