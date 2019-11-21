@@ -5,12 +5,12 @@ import logger from 'redux-logger'
 import { Provider } from 'react-redux'
 import App from './components/App'
 
-// import rootReducer from './reducers'
+import rootReducer from './reducers'
 
-const rootReducer = (state = {}, action) => state
+// const rootReducer = (state = {}, action) => state
 const store = createStore(rootReducer, applyMiddleware(logger))
 
-// console.log(store.getState())
+console.log(store.getState().mainReducer.dataForTextareaOne)
 
 render(
   <Provider store={store}>

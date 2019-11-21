@@ -5,15 +5,8 @@ import LinesCounterStyled from './LinesCounterStyled'
 import ButtonsBlockContainer from '../containers/ButtonsBlockContainer'
 
 import { Container, Row, Col } from '@bootstrap-styled/v4'
-// import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
-
 import { WrapAll } from './WrapAll'
-
-const myTheme = {
-  '$btn-primary-bg': 'green',
-  //   '$btn-border-width': '33px',
-  '$body-bg': '',
-}
+import FirstTextareaBlockContainer from '../containers/FirstTextareaBlockContainer'
 
 function App() {
   return (
@@ -21,8 +14,7 @@ function App() {
       <WrapAll>
         <Row>
           <Col>
-            <LinesCounterStyled />
-            <TextAreaStyled />
+            <FirstTextareaBlockContainer />
           </Col>
 
           <Col>
@@ -44,18 +36,6 @@ function App() {
             <TextAreaStyled />
           </Col>
         </Row>
-        {/* 
-        <BootstrapProvider theme={myTheme}>
-        <Button color="success"    >
-          457646
-        </Button>
-        33333333
-        <br />
-        <Button color="primary" size="lg" block>
-          vdsvdsvsdvss
-        </Button>
-      </BootstrapProvider>
-       */}
       </WrapAll>
     </Container>
   )
