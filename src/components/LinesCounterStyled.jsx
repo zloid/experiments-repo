@@ -3,10 +3,14 @@ import styled from 'styled-components'
 
 const LinesCounter = ({ className }) => {
   return (
-    <p className={className}>
-      i styled <br /> 
-        <u>000</u>
-    </p>
+    <div className={className}>
+      <p>
+        i styled <br />
+        <u>
+          <strong>{Math.floor(Math.random() * 1000)}</strong>
+        </u>
+      </p>
+    </div>
   )
 }
 
@@ -14,6 +18,5 @@ const LinesCounterStyled = styled(LinesCounter)`
   // color: pink;
   text-align: center;
 `
- 
 
 export default LinesCounterStyled

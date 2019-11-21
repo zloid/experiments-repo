@@ -1,21 +1,19 @@
 import React from 'react'
 import './App.css'
-import OneTextAreaStyled from './styled/OneTextAreaStyled'
-import LinesCounterStyled from './styled/LinesCounterStyled'
+import TextAreaStyled from './TextAreaStyled'
+import LinesCounterStyled from './LinesCounterStyled'
 import ButtonsBlockContainer from '../containers/ButtonsBlockContainer'
 
-import { Container, Row, Col, Button } from '@bootstrap-styled/v4'
-import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
+import { Container, Row, Col } from '@bootstrap-styled/v4'
+// import BootstrapProvider from '@bootstrap-styled/provider/lib/BootstrapProvider';
 
 import { WrapAll } from './WrapAll'
-
 
 const myTheme = {
   '$btn-primary-bg': 'green',
   //   '$btn-border-width': '33px',
-  // '$body-bg': 'silver',
+  '$body-bg': '',
 }
-
 
 function App() {
   return (
@@ -24,12 +22,12 @@ function App() {
         <Row>
           <Col>
             <LinesCounterStyled />
-            <OneTextAreaStyled />
+            <TextAreaStyled />
           </Col>
 
           <Col>
             <LinesCounterStyled />
-            <OneTextAreaStyled />
+            <TextAreaStyled />
           </Col>
 
           <Col lg="2">
@@ -39,23 +37,25 @@ function App() {
           <Col>
             <LinesCounterStyled />
             {/* <ButtonsBlockContainer /> */}
-            <OneTextAreaStyled />
+            <TextAreaStyled />
           </Col>
           <Col>
             <LinesCounterStyled />
-            <OneTextAreaStyled />
+            <TextAreaStyled />
           </Col>
         </Row>
+        {/* 
         <BootstrapProvider theme={myTheme}>
-        <Button color="success" size="lg" block>
-          Get Result
+        <Button color="success"    >
+          457646
         </Button>
         33333333
         <br />
         <Button color="primary" size="lg" block>
-          Delete
+          vdsvdsvsdvss
         </Button>
       </BootstrapProvider>
+       */}
       </WrapAll>
     </Container>
   )

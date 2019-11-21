@@ -6,12 +6,12 @@ import Textarea from 'react-textarea-autosize'
 const OneTextArea = ({ className }) => {
   return (
     <>
-      <Textarea minRows={12} className={className} />
+      <Textarea minRows={14} className={className} />
     </>
   )
 }
 
-const OneTextAreaStyled = styled(OneTextArea)`
+const TextAreaStyled = styled(OneTextArea)`
   //    .sticky
   position: -webkit-sticky;
   position: sticky;
@@ -27,4 +27,4 @@ OneTextArea.propTypes = {
   className: PropTypes.string.isRequired,
 }
 
-export default OneTextAreaStyled
+export default TextAreaStyled
