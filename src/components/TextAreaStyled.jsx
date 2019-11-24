@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Textarea from 'react-textarea-autosize'
 
-const OneTextArea = ({ className }) => {
+const OneTextArea = ({ className, initialInnerValue }) => {
+  const [innerVal, setInnerVal] = useState(initialInnerValue)
   return (
     <>
-      <Textarea minRows={14} className={className} />
+      <Textarea value={innerVal} onChange={e => 
+        {          
+          setInnerVal(e.target.value)
+          console.log(e.target.value)
+        }} minRows={14} className={className} />
     </>
   )
 }
